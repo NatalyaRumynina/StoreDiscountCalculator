@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreDiscountCalculator", "StoreDiscountCalculator\StoreDiscountCalculator.csproj", "{CDD84134-BCC4-41FF-AB59-40D23867C76F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreDiscountCalculator.Tests", "StoreDiscountCalculator.Tests\StoreDiscountCalculator.Tests.csproj", "{3A6CC003-B3A8-4A4B-B997-9759B60E4479}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDD84134-BCC4-41FF-AB59-40D23867C76F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDD84134-BCC4-41FF-AB59-40D23867C76F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDD84134-BCC4-41FF-AB59-40D23867C76F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDD84134-BCC4-41FF-AB59-40D23867C76F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A6CC003-B3A8-4A4B-B997-9759B60E4479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A6CC003-B3A8-4A4B-B997-9759B60E4479}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A6CC003-B3A8-4A4B-B997-9759B60E4479}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A6CC003-B3A8-4A4B-B997-9759B60E4479}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
