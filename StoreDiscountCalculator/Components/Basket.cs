@@ -23,7 +23,7 @@ namespace StoreDiscountCalculator.Components
 
         public void RemoveProduct(Product product)
         {
-            _products.RemoveAll(p => p.GetCode() == product.GetCode());
+            _products.RemoveAll(p => p.Code == product.Code);
         }
     }
 }

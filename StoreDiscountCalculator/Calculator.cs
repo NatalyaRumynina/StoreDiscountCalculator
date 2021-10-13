@@ -17,7 +17,7 @@ namespace StoreDiscountCalculator
         public float GetTotalPrice(Basket basket)
         {
             var products = basket.GetProducts();
-            var codes = products.Select(p => p.GetCode()).Distinct().ToArray();
+            var codes = products.Select(p => p.Code).Distinct().ToArray();
 
             var discounts = _client.GetDiscountByCodes(codes);
 
@@ -25,7 +25,7 @@ namespace StoreDiscountCalculator
             foreach (var product in products)
             {
                 var productDiscount = GetProductDiscount(product, discounts);
-                totalPrice += product.GetPrice() * (1 - productDiscount / 100);
+                totalPrice += product.Price * (1 - productDiscount / 100);
             }
 
             return totalPrice;
@@ -33,9 +33,8 @@ namespace StoreDiscountCalculator
 
         private float GetProductDiscount(Product product, Dictionary<string, float> discounts)
         {
-            var code = product.GetCode();
-            var productDiscount = discounts.ContainsKey(code)
-                ? discounts[code]
+            var productDiscount = discounts.ContainsKey(product.Code)
+                ? discounts[product.Code]
                 : 0;
 
             if (productDiscount < 0 || productDiscount > 100)

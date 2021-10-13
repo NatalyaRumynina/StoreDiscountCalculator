@@ -15,11 +15,11 @@ namespace StoreDiscountCalculator.Tests
         {
             var basket = new Basket();
 
-            basket.AddProduct(new Product("1", "a", 100));
-            basket.AddProduct(new Product("2", "b", 100));
-            basket.AddProduct(new Product("3", "c", 100));
-            basket.AddProduct(new Product("4", "d", 100));
-            basket.AddProduct(new Product("5", "e", 100));
+            basket.AddProduct(new Product{Code = "1", Name = "a", Price = 100});
+            basket.AddProduct(new Product{Code = "2", Name = "b", Price = 100});
+            basket.AddProduct(new Product{Code = "3", Name = "c", Price = 100});
+            basket.AddProduct(new Product{Code = "4", Name = "d", Price = 100});
+            basket.AddProduct(new Product{Code = "5", Name = "e", Price = 100});
 
             var discountClientMock = new Mock<IDiscountClient>();
             discountClientMock.Setup(d => d.GetDiscountByCodes(request)).Returns(response).Verifiable();
